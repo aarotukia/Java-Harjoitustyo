@@ -1,6 +1,6 @@
 /** Converts centimeters to other units of measure
  * @author Aaro Tukia, Tuomas Thurèn, Mika Lukkarinen
- * @version 1.1
+ * @version 1.2
  * @since 1.0
  * @param args array of string arguments.
  */
@@ -11,78 +11,92 @@ public class javaHarjoitustyö {
 public static final Scanner lukija = new Scanner(System.in);
 public static void main(String[] args) {
 	System.out.println("Converting units to other units of measurement \nGive unit type:");
+	
+	//lists available units of measurement
 	listUnits();
-
+	
 	//takes user input
 	int input = lukija.nextInt();
+	
 	String unit = "";
 	//switch1
 	switch(input) {
 	case 1:
-		System.out.println("You chose millimeters");
-		unit = "millimeters";
-		
+		unit = "millimeter";
+		System.out.println("You chose "+ unit);
 		break; 
 	case 2: 
-		System.out.println("You chose centimeters");
-		unit = "centimeters";
-		
+		unit = "centimeter";
+		System.out.println("You chose "+ unit);
 		break;
 	case 3:
-		System.out.println("You chose Decimeters");
-		unit = "Decimeters";
+		unit = "decimeter";
+		System.out.println("You chose "+ unit);
+	
 		break;
 	case 4: 
-		System.out.println("You chose Meters");
-		unit = "Meters";
+		unit = "meters";
+		System.out.println("You chose "+ unit);
+
 		break;
 	case 5:
-		System.out.println("You chose decameters");
 		unit = "decameters";
+		System.out.println("You chose "+ unit);
+
 		break;
 	case 6: 
-		System.out.println("You chose hectometers");
 		unit = "hectometers";
+		System.out.println("You chose "+ unit);
+
 		break;
 	case 7:
-		System.out.println("You chose kilometers");
 		unit = "kilometers";
+		System.out.println("You chose "+ unit);
+	
 		break;
 	case 8: 
-		System.out.println("You chose inches");
 		unit = "inches";
+		System.out.println("You chose "+ unit);
+
 		break;
 	case 9: 
-		System.out.println("You chose foot");
 		unit = "foot";
+		System.out.println("You chose "+ unit);
+	
 		break;
 	case 10:
-		System.out.println("You chose yard");
 		unit = "yard";
+		System.out.println("You chose "+ unit);
+	
 		break;
 	case 11: 
-		System.out.println("You chose mile");
 		unit = "mile";
+		System.out.println("You chose "+ unit);
+	
 		break;
 	case 12:
-		System.out.println("You chose square meter");
 		unit = "Square meter";
+		System.out.println("You chose "+ unit);
+
 		break;
 	case 13: 
-		System.out.println("You chose are");
 		unit = "are";
+		System.out.println("You chose "+ unit);
+	
 		break;
 	case 14:
-		System.out.println("You chose hectare");
 		unit = "hectare";
+		System.out.println("You chose "+ unit);
+		
 		break;
 	case 15: 
-		System.out.println("You chose acre");
 		unit = "acre";
+		System.out.println("You chose "+ unit);
+	
 		break;
 	case 16: 
-		System.out.println("You chose square mile");
 		unit = "square mile";
+		System.out.println("You chose "+ unit);
 		break;
 	case 17:
 		//ASD
@@ -100,96 +114,113 @@ public static void main(String[] args) {
 		//ASD
 		break;
 	}
+	
 	listUnits();
 	System.out.println(unit + "s to?:  ");
 	//takes the second user input
 	int input2 = lukija.nextInt();
 	String unit2 = "";
 	//switch2
-		switch(input2) {
-		case 1:
-			System.out.println("You chose millimeters");
-			unit2 = "millimeters";
-			break; 
-		case 2: 
-			System.out.println("You chose centimeters");
-			unit2 = "centimeters";
-			break;
-		case 3:
-			System.out.println("You chose Ddecimeters");
-			unit2 = "decimeters";
-			break;
-		case 4: 
-			System.out.println("You chose meters");
-			unit2 = "meters";
-			break;
-		case 5:
-			System.out.println("You chose decameters");
-			unit2 = "decameters";
-			break;
-		case 6: 
-			System.out.println("You chose hectometers");
-			unit2 = "hectometers";
-			break;
-		case 7:
-			System.out.println("You chose kilometers");
-			unit2 = "kilometers";
-			break;
-		case 8: 
-			System.out.println("You chose inches");
-			unit2 = "inches";
-			break;
-		case 9: 
-			System.out.println("You chose foot");
-			unit2 = "foot";
-			break;
-		case 10:
-			System.out.println("You chose yard");
-			unit2 = "yard";
-			break;
-		case 11: 
-			System.out.println("You chose mile");
-			unit2 = "mile";
-			break;
-		case 12:
-			System.out.println("You chose square meter");
-			unit2 = "Square meter";
-			break;
-		case 13: 
-			System.out.println("You chose are");
-			unit2 = "are";
-			break;
-		case 14:
-			System.out.println("You chose hectare");
-			unit2 = "hectare";
-			break;
-		case 15: 
-			System.out.println("You chose acre");
-			unit2 = "acre";
-			break;
-		case 16: 
-			System.out.println("You chose square mile");
-			unit2 = "square mile";
-			break;
-		case 17:
-			//ASD
-			break;
-		case 18: 
-			//asd
-			break;
-		case 19:
-			//ASD
-			break;
-		case 20: 
-			//asd
-			break;
-		case 21:
-			//ASD
-			break;
-		}
-		System.out.println(unit + " to " + unit2 +" ....");
+	switch(input2) {
+	case 1:
+		unit2 = "millimeter";
+		System.out.println("You chose "+ unit2);
+		break; 
+	case 2: 
+		unit2 = "centimeter";
+		System.out.println("You chose "+ unit2);
+		break;
+	case 3:
+		unit2 = "decimeter";
+		System.out.println("You chose "+ unit2);
+	
+		break;
+	case 4: 
+		unit2 = "meters";
+		System.out.println("You chose "+ unit2);
+
+		break;
+	case 5:
+		unit2 = "decameters";
+		System.out.println("You chose "+ unit2);
+
+		break;
+	case 6: 
+		unit2 = "hectometers";
+		System.out.println("You chose "+ unit2);
+
+		break;
+	case 7:
+		unit2 = "kilometers";
+		System.out.println("You chose "+ unit2);
+	
+		break;
+	case 8: 
+		unit2 = "inches";
+		System.out.println("You chose "+ unit2);
+
+		break;
+	case 9: 
+		unit2 = "foot";
+		System.out.println("You chose "+ unit2);
+	
+		break;
+	case 10:
+		unit2 = "yard";
+		System.out.println("You chose "+ unit2);
+	
+		break;
+	case 11: 
+		unit2 = "mile";
+		System.out.println("You chose "+ unit2);
+	
+		break;
+	case 12:
+		unit2 = "Square meter";
+		System.out.println("You chose "+ unit2);
+
+		break;
+	case 13: 
+		unit2 = "are";
+		System.out.println("You chose "+ unit2);
+	
+		break;
+	case 14:
+		unit2 = "hectare";
+		System.out.println("You chose "+ unit2);
+		
+		break;
+	case 15: 
+		unit2 = "acre";
+		System.out.println("You chose "+ unit2);
+	
+		break;
+	case 16: 
+		unit2 = "square mile";
+		System.out.println("You chose "+ unit2);
+		break;
+	case 17:
+		//ASD
+		break;
+	case 18: 
+		//asd
+		break;
+	case 19:
+		//ASD
+		break;
+	case 20: 
+		//asd
+		break;
+	case 21:
+		//ASD
+		break;
+	}
+		System.out.println("converting " +unit + " to " + unit2 +"s..");
 	
 	}
+/** Lists available units of measurement
+ *  
+ */
 public static void listUnits() {
 	//lists available units of measurement to the user
 	
