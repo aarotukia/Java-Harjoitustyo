@@ -25,7 +25,7 @@ public static void main(String[] args) {
 		double conversionMath = 30.48;
 		double feet = 0;
 		feet = cm / conversionMath;	
-		return feet; //yes
+		return feet; 
 	}
 	/** Converts centimeters to inches 
 	 * 
