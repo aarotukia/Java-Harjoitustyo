@@ -65,32 +65,32 @@ public class conv {
     }
 
     //CEMTIMETERS
-    final double cm_to_mm = 0.1;
+    final double cm_to_mm = 10;
     final double cm_to_dm = 0.1;
-    final double cm_to_m = 0.1;
-    final double cm_to_dam= 0.1;
-    final double cm_to_hm = 0.1;
-    final double cm_to_km = 0.1;
-    final double cm_to_in = 0.1;
-    final double cm_to_ft = 0.1;
-    final double cm_to_yd = 0.1;
-    final double cm_to_mi = 0.1;
+    final double cm_to_m = 0.01;
+    final double cm_to_dam= 0.001;
+    final double cm_to_hm = 0.0001;
+    final double cm_to_km = 0.00001;
+    final double cm_to_in = 0.3937008;
+    final double cm_to_ft = 0.0328084;
+    final double cm_to_yd = 0.01093613;
+    final double cm_to_mi = 6.213712e-6;
     final double cm_to_square_meter = 0.1;
     final double cm_to_are = 0.1;
     final double cm_to_hectare = 0.1;
     final double cm_to_acre = 0.1;
     final double cm_to_square_mi = 0.1;
     //DECIMETER
-    final double dm_to_mm = 0.1;
-    final double dm_to_cm = 0.1;
+    final double dm_to_mm = 100;
+    final double dm_to_cm = 10;
     final double dm_to_m = 0.1;
-    final double dm_to_dam= 0.1;
-    final double dm_to_hm = 0.1;
-    final double dm_to_km = 0.1;
-    final double dm_to_in = 0.1;
-    final double dm_to_ft = 0.1;
-    final double dm_to_yd = 0.1;
-    final double dm_to_mi = 0.1;
+    final double dm_to_dam= 0.01;
+    final double dm_to_hm = 0.001;
+    final double dm_to_km = 0.0001;
+    final double dm_to_in = 3.937008;
+    final double dm_to_ft = 0.328084;
+    final double dm_to_yd = 0.1093613;
+    final double dm_to_mi = 6.213712e-5;
     final double dm_to_square_meter = 0.1;
     final double dm_to_are = 0.1;
     final double dm_to_hectare = 0.1;
