@@ -6,7 +6,7 @@
  */
 package OPR_Java;
 import java.util.Scanner;
-public class javaHarjoitusty {
+public class javaHarjoitustyo {
 
 public static final Scanner lukija = new Scanner(System.in);
 public static void main(String[] args) {
