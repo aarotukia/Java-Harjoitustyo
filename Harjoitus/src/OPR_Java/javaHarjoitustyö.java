@@ -219,7 +219,6 @@ public static void main(String[] args) {
 	
 	}
 /** Lists available units of measurement
- *  
  */
 public static void listUnits() {
 	//lists available units of measurement to the user
