@@ -120,9 +120,9 @@ public class conv {
     final double dam_to_hm = 0.1;
     final double dam_to_km = 0.01;
     final double dam_to_in = 393.7008;
-    final double dam_to_ft = 0.1;
-    final double dam_to_yd = 0.1;
-    final double dam_to_mi = 0.1;
+    final double dam_to_ft = 32.8084;
+    final double dam_to_yd = 10.93613;
+    final double dam_to_mi = 0.006213712;
     final double dam_to_square_meter = 0.1;
     final double dam_to_are = 0.1;
     final double dam_to_hectare = 0.1;
