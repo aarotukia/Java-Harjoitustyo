@@ -139,16 +139,16 @@ public class conv {
     final double in_to_square_mi = 0;
     //endregion
     //region FOOT
-    final double ft_to_mm = 0;
-    final double ft_to_cm = 0;
-    final double ft_to_dm = 0;
-    final double ft_to_m= 0;
-    final double ft_to_dam = 0;
-    final double ft_to_hm = 0;
-    final double ft_to_im = 0;
-    final double ft_to_km = 0;
-    final double ft_to_yd = 0;
-    final double ft_to_mi = 0;
+    final double ft_to_mm = 304.8;
+    final double ft_to_cm = 30.48;
+    final double ft_to_dm = 3.048;
+    final double ft_to_m= 0.3048;
+    final double ft_to_dam = 0.03048;
+    final double ft_to_hm = 0.003048;
+    final double ft_to_im = 12;
+    final double ft_to_km = 0.0003048;
+    final double ft_to_yd = 0.333333;
+    final double ft_to_mi = 0.000189394;
     final double ft_square_meter = 0;
     final double ft_to_are = 0;
     final double ft_to_hectare = 0;
