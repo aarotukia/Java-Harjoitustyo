@@ -1,12 +1,12 @@
 /** Converts centimeters to other units of measure
- * @author Aaro Tukia, Tuomas Thurèn, Mika Lukkarinen
+ * @author Aaro Tukia, Tuomas Thurï¿½n, Mika Lukkarinen
  * @version 1.2
  * @since 1.0
  * @param args array of string arguments.
  */
 package OPR_Java;
 import java.util.Scanner;
-public class javaHarjoitustyö {
+public class javaHarjoitustyÃ¶ {
 
 public static final Scanner lukija = new Scanner(System.in);
 public static void main(String[] args) {
