@@ -227,251 +227,281 @@ public static void main(String[] args) {
 		if (unit.equals("millimeter") && unit2.equals("centimeter")) {
 			System.out.println(mmToCm(userInput));
 		}
-		if (unit.equals("millimeter") && unit2.equals("decimeter")) {
+		else if (unit.equals("millimeter") && unit2.equals("decimeter")) {
 			System.out.println(mmToDm(userInput));
 		}
-		if (unit.equals("millimeter") && unit2.equals("meter")) {
+		else if (unit.equals("millimeter") && unit2.equals("meter")) {
 			System.out.println(mmToM(userInput));
 		}
-		if (unit.equals("millimeter") && unit2.equals("decameter")) {
+		else if (unit.equals("millimeter") && unit2.equals("decameter")) {
 			System.out.println(mmToDam(userInput));
 		}
-		if (unit.equals("millimeter") && unit2.equals("hectometer")) {
+		else if (unit.equals("millimeter") && unit2.equals("hectometer")) {
 			System.out.println(mmToHm(userInput));
 		}
-		if (unit.equals("millimeter") && unit2.equals("kilometer")) {
+		else if (unit.equals("millimeter") && unit2.equals("kilometer")) {
 			System.out.println(mmToKm(userInput));
 		}
-		if (unit.equals("millimeter") && unit2.equals("inches")) {
+		else if (unit.equals("millimeter") && unit2.equals("inches")) {
 			System.out.println(mmToIn(userInput));
 		}
-		if (unit.equals("millimeter") && unit2.equals("foot")) {
+		else if (unit.equals("millimeter") && unit2.equals("foot")) {
 			System.out.println(mmToFt(userInput));
 		}
-		if (unit.equals("millimeter") && unit2.equals("yard")) {
+		else if (unit.equals("millimeter") && unit2.equals("yard")) {
 			System.out.println(mmToYd(userInput));
 		}
-		if (unit.equals("millimeter") && unit2.equals("mile")) {
+		else if (unit.equals("millimeter") && unit2.equals("mile")) {
 			System.out.println(mmToMi(userInput));
 		}
 		
 		//IF STATEMENTS || CENTIMETERS || CENTIMETERS || CENTIMETERS || CENTIMETERS 
-		if (unit.equals("centimeter") && unit2.equals("millimeter")) {
+		else if (unit.equals("centimeter") && unit2.equals("millimeter")) {
 			System.out.println(cmToMm(userInput));
 		}
-		if (unit.equals("centimeter") && unit2.equals("decimeter")) {
+		else if (unit.equals("centimeter") && unit2.equals("decimeter")) {
 			System.out.println(cmToDm(userInput));
 		}
-		if (unit.equals("centimeter") && unit2.equals("meter")) {
+		else if (unit.equals("centimeter") && unit2.equals("meter")) {
 			System.out.println(cmToM(userInput));
 		}
-		if (unit.equals("centimeter") && unit2.equals("decameter")) {
+		else if (unit.equals("centimeter") && unit2.equals("decameter")) {
 			System.out.println(cmToDam(userInput));
 		}
-		if (unit.equals("centimeter") && unit2.equals("hectometer")) {
+		else if (unit.equals("centimeter") && unit2.equals("hectometer")) {
 			System.out.println(cmToHm(userInput));
 		}
-		if (unit.equals("centimeter") && unit2.equals("kilometer")) {
+		else if (unit.equals("centimeter") && unit2.equals("kilometer")) {
 			System.out.println(cmToKm(userInput));
 		}
-		if (unit.equals("centimeter") && unit2.equals("inches")) {
+		else if (unit.equals("centimeter") && unit2.equals("inches")) {
 			System.out.println(cmToIn(userInput));
 		}
-		if (unit.equals("centimeter") && unit2.equals("foot")) {
+		else if (unit.equals("centimeter") && unit2.equals("foot")) {
 			System.out.println(cmToFt(userInput));
 		}
-		if (unit.equals("centimeter") && unit2.equals("yard")) {
+		else if (unit.equals("centimeter") && unit2.equals("yard")) {
 			System.out.println(cmToYd(userInput));
 		}
-		if (unit.equals("centimeter") && unit2.equals("mile")) {
+		else if (unit.equals("centimeter") && unit2.equals("mile")) {
 			System.out.println(cmToMi(userInput));
 		}
 		//IF STATEMENTS || DECIMETERS || DECIMETERS || DECIMETERS || DECIMETERS
 		
-		if (unit.equals("decimeter") && unit2.equals("millimeter")) {
+		else if (unit.equals("decimeter") && unit2.equals("millimeter")) {
 			System.out.println(dmToMm(userInput));
 		}
-		if (unit.equals("decimeter") && unit2.equals("centimeter")) {
+		else if (unit.equals("decimeter") && unit2.equals("centimeter")) {
 			System.out.println(dmToCm(userInput));
 		}
-		if (unit.equals("decimeter") && unit2.equals("meter")) {
+		else if (unit.equals("decimeter") && unit2.equals("meter")) {
 			System.out.println(dmToM(userInput));
 		}
-		if (unit.equals("decimeter") && unit2.equals("decameter")) {
+		else if (unit.equals("decimeter") && unit2.equals("decameter")) {
 			System.out.println(dmToDam(userInput));
 		}
-		if (unit.equals("decimeter") && unit2.equals("hectometer")) {
+		else if (unit.equals("decimeter") && unit2.equals("hectometer")) {
 			System.out.println(dmToHm(userInput));
 		}
-		if (unit.equals("decimeter") && unit2.equals("kilometer")) {
+		else if (unit.equals("decimeter") && unit2.equals("kilometer")) {
 			System.out.println(dmToKm(userInput));
 		}
-		if (unit.equals("decimeter") && unit2.equals("inches")) {
+		else if (unit.equals("decimeter") && unit2.equals("inches")) {
 			System.out.println(dmToIn(userInput));
 		}
-		if (unit.equals("decimeter") && unit2.equals("foot")) {
+		else if (unit.equals("decimeter") && unit2.equals("foot")) {
 			System.out.println(dmToFt(userInput));
 		}
-		if (unit.equals("decimeter") && unit2.equals("yard")) {
+		else if (unit.equals("decimeter") && unit2.equals("yard")) {
 			System.out.println(dmToYd(userInput));
 		}
-		if (unit.equals("decimeter") && unit2.equals("mile")) {
+		else if (unit.equals("decimeter") && unit2.equals("mile")) {
 			System.out.println(dmToMi(userInput));
 		}
 		//IF STATEMENTS || METERS || METERS || METERS || METERS 
 		
-		if (unit.equals("meter") && unit2.equals("millimeter")) {
+		else if (unit.equals("meter") && unit2.equals("millimeter")) {
 			System.out.println(mToMm(userInput));
 		}
-		if (unit.equals("meter") && unit2.equals("centimeter")) {
+		else if (unit.equals("meter") && unit2.equals("centimeter")) {
 			System.out.println(mToCm(userInput));
 		}
-		if (unit.equals("meter") && unit2.equals("decimeter")) {
+		else if (unit.equals("meter") && unit2.equals("decimeter")) {
 			System.out.println(mToDm(userInput));
 		}
-		if (unit.equals("meter") && unit2.equals("decameter")) {
+		else if (unit.equals("meter") && unit2.equals("decameter")) {
 			System.out.println(mToDam(userInput));
 		}
-		if (unit.equals("meter") && unit2.equals("hectometer")) {
+		else if (unit.equals("meter") && unit2.equals("hectometer")) {
 			System.out.println(mToHm(userInput));
 		}
-		if (unit.equals("meter") && unit2.equals("kilometer")) {
+		else if (unit.equals("meter") && unit2.equals("kilometer")) {
 			System.out.println(mToKm(userInput));
 		}
-		if (unit.equals("meter") && unit2.equals("inches")) {
+		else if (unit.equals("meter") && unit2.equals("inches")) {
 			System.out.println(mToIn(userInput));
 		}
-		if (unit.equals("meter") && unit2.equals("foot")) {
+		else if (unit.equals("meter") && unit2.equals("foot")) {
 			System.out.println(mToFt(userInput));
 		}
-		if (unit.equals("meter") && unit2.equals("yard")) {
+		else if (unit.equals("meter") && unit2.equals("yard")) {
 			System.out.println(mToYd(userInput));
 		}
-		if (unit.equals("meter") && unit2.equals("mile")) {
+		else if (unit.equals("meter") && unit2.equals("mile")) {
 			System.out.println(mToMi(userInput));
 		}
 		//IF STATEMENTS || DECAMETERS || DECAMETERS || DECAMETERS || DECAMETERS 
-		if (unit.equals("decameter") && unit2.equals("millimeter")) {
+		else if (unit.equals("decameter") && unit2.equals("millimeter")) {
 			System.out.println(damToMm(userInput));
 		}
-		if (unit.equals("decameter") && unit2.equals("centimeter")) {
+		else if (unit.equals("decameter") && unit2.equals("centimeter")) {
 			System.out.println(damToCm(userInput));
 		}
-		if (unit.equals("decameter") && unit2.equals("decimeter")) {
+		else if (unit.equals("decameter") && unit2.equals("decimeter")) {
 			System.out.println(damToDm(userInput));
 		}
-		if (unit.equals("decameter") && unit2.equals("meter")) {
+		else if (unit.equals("decameter") && unit2.equals("meter")) {
 			System.out.println(damToM(userInput));
 		}
-		if (unit.equals("decameter") && unit2.equals("hectometer")) {
+		else if (unit.equals("decameter") && unit2.equals("hectometer")) {
 			System.out.println(damToHm(userInput));
 		}
-		if (unit.equals("decameter") && unit2.equals("kilometer")) {
+		else if (unit.equals("decameter") && unit2.equals("kilometer")) {
 			System.out.println(damToKm(userInput));
 		}
-		if (unit.equals("decameter") && unit2.equals("inches")) {
+		else if (unit.equals("decameter") && unit2.equals("inches")) {
 			System.out.println(damToIn(userInput));
 		}
-		if (unit.equals("decameter") && unit2.equals("foot")) {
+		else if (unit.equals("decameter") && unit2.equals("foot")) {
 			System.out.println(damToFt(userInput));
 		}
-		if (unit.equals("decameter") && unit2.equals("yard")) {
+		else if (unit.equals("decameter") && unit2.equals("yard")) {
 			System.out.println(damToYd(userInput));
 		}
-		if (unit.equals("decameter") && unit2.equals("mile")) {
+		else if (unit.equals("decameter") && unit2.equals("mile")) {
 			System.out.println(damToMi(userInput));
 		}
 		
 		//IF STATEMENTS || HECTOMETERS || HECTOMETERS || HECTOMETERS || HECTOMETERS
 		
-		if (unit.equals("hectometer") && unit2.equals("millimeter")) {
+		else if (unit.equals("hectometer") && unit2.equals("millimeter")) {
 			System.out.println(hmToMm(userInput));
 		}
-		if (unit.equals("hectometer") && unit2.equals("centimeter")) {
+		else if (unit.equals("hectometer") && unit2.equals("centimeter")) {
 			System.out.println(hmToCm(userInput));
 		}
-		if (unit.equals("hectometer") && unit2.equals("decimeter")) {
+		else if (unit.equals("hectometer") && unit2.equals("decimeter")) {
 			System.out.println(hmToDm(userInput));
 		}
-		if (unit.equals("hectometer") && unit2.equals("meter")) {
+		else if (unit.equals("hectometer") && unit2.equals("meter")) {
 			System.out.println(hmToM(userInput));
 		}
-		if (unit.equals("hectometer") && unit2.equals("decameter")) {
+		else if (unit.equals("hectometer") && unit2.equals("decameter")) {
 			System.out.println(hmToDam(userInput));
 		}
-		if (unit.equals("hectometer") && unit2.equals("kilometer")) {
+		else if (unit.equals("hectometer") && unit2.equals("kilometer")) {
 			System.out.println(hmToKm(userInput));
 		}
-		if (unit.equals("hectometer") && unit2.equals("inches")) {
+		else if (unit.equals("hectometer") && unit2.equals("inches")) {
 			System.out.println(hmToIn(userInput));
 		}
-		if (unit.equals("hectometer") && unit2.equals("foot")) {
+		else if (unit.equals("hectometer") && unit2.equals("foot")) {
 			System.out.println(hmToFt(userInput));
 		}
-		if (unit.equals("hectometer") && unit2.equals("yard")) {
+		else if (unit.equals("hectometer") && unit2.equals("yard")) {
 			System.out.println(hmToYd(userInput));
 		}
-		if (unit.equals("hectometer") && unit2.equals("mile")) {
+		else if (unit.equals("hectometer") && unit2.equals("mile")) {
 			System.out.println(hmToMi(userInput));
 		}
 		//IF STATEMENTS || KILOMETERS || KILOMETERS || KILOMETERS || KILOMETERS
-		if (unit.equals("kilometer") && unit2.equals("millimeter")) {
+		else if (unit.equals("kilometer") && unit2.equals("millimeter")) {
 			System.out.println(kmToMm(userInput));
 		}
-		if (unit.equals("kilometer") && unit2.equals("centimeter")) {
+		else if (unit.equals("kilometer") && unit2.equals("centimeter")) {
 			System.out.println(kmToCm(userInput));
 		}
-		if (unit.equals("kilometer") && unit2.equals("decimeter")) {
+		else if (unit.equals("kilometer") && unit2.equals("decimeter")) {
 			System.out.println(kmToDm(userInput));
 		}
-		if (unit.equals("kilometer") && unit2.equals("meter")) {
+		else if (unit.equals("kilometer") && unit2.equals("meter")) {
 			System.out.println(kmToM(userInput));
 		}
-		if (unit.equals("kilometer") && unit2.equals("decameter")) {
+		else if (unit.equals("kilometer") && unit2.equals("decameter")) {
 			System.out.println(kmToDam(userInput));
 		}
-		if (unit.equals("kilometer") && unit2.equals("hectometer")) {
+		else if (unit.equals("kilometer") && unit2.equals("hectometer")) {
 			System.out.println(kmToHm(userInput));
 		}
-		if (unit.equals("kilometer") && unit2.equals("inches")) {
+		else if (unit.equals("kilometer") && unit2.equals("inches")) {
 			System.out.println(kmToIn(userInput));
 		}
-		if (unit.equals("kilometer") && unit2.equals("foot")) {
+		else if (unit.equals("kilometer") && unit2.equals("foot")) {
 			System.out.println(kmToFt(userInput));
 		}
-		if (unit.equals("kilometer") && unit2.equals("yard")) {
+		else if (unit.equals("kilometer") && unit2.equals("yard")) {
 			System.out.println(kmToYd(userInput));
 		}
-		if (unit.equals("kilometer") && unit2.equals("mile")) {
+		else if (unit.equals("kilometer") && unit2.equals("mile")) {
 			System.out.println(kmToMi(userInput));
 		}
 		//IF STATEMENTS || INCHES || INCHES || INCHES || INCHES
-		if (unit.equals("inches") && unit2.equals("millimeter")) {
+		else if (unit.equals("inches") && unit2.equals("millimeter")) {
 			System.out.println(inToMm(userInput));
 		}
-		if (unit.equals("inches") && unit2.equals("centimeter")) {
+		else if (unit.equals("inches") && unit2.equals("centimeter")) {
 			System.out.println(inToCm(userInput));
 		}
-		if (unit.equals("inches") && unit2.equals("decimeter")) {
+		else if (unit.equals("inches") && unit2.equals("decimeter")) {
 			System.out.println(inToDm(userInput));
 		}
-		if (unit.equals("inches") && unit2.equals("meter")) {
+		else if (unit.equals("inches") && unit2.equals("meter")) {
 			System.out.println(inToM(userInput));
 		}
-		if (unit.equals("inches") && unit2.equals("decameter")) {
+		else if (unit.equals("inches") && unit2.equals("decameter")) {
 			System.out.println(inToDam(userInput));
 		}
-		if (unit.equals("inches") && unit2.equals("hectometer")) {
+		else if (unit.equals("inches") && unit2.equals("hectometer")) {
 			System.out.println(inToHm(userInput));
 		}
-		if (unit.equals("inches") && unit2.equals("foot")) {
+		else if (unit.equals("inches") && unit2.equals("foot")) {
 			System.out.println(inToFt(userInput));
 		}
-		if (unit.equals("inches") && unit2.equals("yard")) {
+		else if (unit.equals("inches") && unit2.equals("yard")) {
 			System.out.println(inToYd(userInput));
 		}
-		if (unit.equals("inches") && unit2.equals("mile")) {
+		else if (unit.equals("inches") && unit2.equals("mile")) {
 			System.out.println(inToMi(userInput));
+		}
+		
+		//IF STATEMENTS || FOOT || FOOT || FOOT || FOOT
+		
+		else if (unit.equals("foot") && unit2.equals("millimeter")) {
+			System.out.println(ftToMm(userInput));
+		}
+		else if (unit.equals("foot") && unit2.equals("centimeter")) {
+			System.out.println(ftToCm(userInput));
+		}
+		else if (unit.equals("foot") && unit2.equals("decimeter")) {
+			System.out.println(ftToDm(userInput));
+		}
+		else if (unit.equals("foot") && unit2.equals("meter")) {
+			System.out.println(ftToM(userInput));
+		}
+		else if (unit.equals("foot") && unit2.equals("decameter")) {
+			System.out.println(ftToDam(userInput));
+		}
+		else if (unit.equals("foot") && unit2.equals("hectometer")) {
+			System.out.println(ftToHm(userInput));
+		}
+		else if (unit.equals("foot") && unit2.equals("inches")) {
+			System.out.println(ftToIn(userInput));
+		}
+		else if (unit.equals("foot") && unit2.equals("yard")) {
+			System.out.println(ftToYd(userInput));
+		}
+		else if (unit.equals("foot") && unit2.equals("mile")) {
+			System.out.println(ftToMi(userInput));
 		}
 		
 		else {
@@ -479,6 +509,8 @@ public static void main(String[] args) {
 		}
 	
 	}
+
+/* Void method that lists available units of measurement for the user */
 
 /** Void method used to list available units of measurement to the user  */
 public static void listUnits() {
@@ -493,6 +525,8 @@ public static void listUnits() {
 					+ "");
 	
 }
+/* CONVERSION METHODS || MILLIMETERS  || MILLIMETERS || MILLIMETERS || MILLIMETERS  */
+
 
 //CONVERSION METHODS || MILLIMETER CONVERSION || MILLIMETER CONVERSION || MILLIMETER CONVERSION
 
@@ -547,6 +581,10 @@ public static double mmToMi(double unit) {
 	return answer;
 }
 
+/* CONVERSION METHODS || CENTIMETERS || CENTIMETERS || CENTIMETERS || CENTIMETERS  */
+
+
+
 //CONVERSION METHODS || CENTIMETER CONVERSION || CENTIMETER CONVERSION || CENTIMETER CONVERSION
 
 public static double cmToMm(double unit) { 
@@ -599,6 +637,9 @@ public static double cmToMi(double unit) {
 	double answer = unit * conversionMath;		
 	return answer;
 }
+
+/* CONVERSION METHODS || DECIMETERS || DECIMETERS || DECIMETERS || DECIMETERS  */
+
 
 //CONVERSION METHODS || DECIMETER CONVERSION || DECIMETER CONVERSION || DECIMETER CONVERSION
 
@@ -653,6 +694,9 @@ public static double dmToMi(double unit) {
 	return answer;
 }
 
+/* CONVERSION METHODS || METERS || METERS || METERS || METERS */
+
+
 //CONVERSION METHODS || METER CONVERSION || METER CONVERSION || METER CONVERSION
 
 public static double mToMm(double unit) { 
@@ -705,6 +749,10 @@ public static double mToMi(double unit) {
 	double answer = unit * conversionMath;		
 	return answer;
 }
+
+/* CONVERSION METHODS || DECAMETERS || DECAMETERS || DECAMETERS || DECAMETERS */
+
+
 
 //CONVERSION METHODS || DECAMETER CONVERSION || DECAMETER CONVERSION || DECAMETER CONVERSION
 
@@ -759,6 +807,9 @@ public static double damToMi(double unit) {
 	return answer;
 }
 
+/* CONVERSION METHODS || HECTOMETERS || HECTOMETERS  || HECTOMETERS || HECTOMETERS  */
+
+
 //CONVERSION METHODS || HECTOMETER CONVERSION || HECTOMETER CONVERSION || HECTOMETER CONVERSION
 
 public static double hmToMm(double unit) { 
@@ -811,6 +862,9 @@ public static double hmToMi(double unit) {
 	double answer = unit * conversionMath;		
 	return answer;
 }
+
+/* CONVERSION METHODS || KILOMETERS ||KILOMETERS || KILOMETERS || KILOMETERS  */
+
 
 //CONVERSION METHODS || KILOMETER CONVERSION || KILOMETER CONVERSION || KILOMETER CONVERSION
 
@@ -865,7 +919,10 @@ public static double kmToMi(double unit) {
 	return answer;
 }
 
-//CONVERSION METHODS || KILOMETER CONVERSION || KILOMETER CONVERSION || KILOMETER CONVERSION
+/* CONVERSION METHODS || INCHES || INCHES|| INCHES|| INCHES */
+
+
+//CONVERSION METHODS || INCHES CONVERSION || INCHES CONVERSION || INCHES CONVERSION
 public static double inToMm(double unit) { 
 	double conversionMath = conv.in_to_mm;
 	double answer = unit * conversionMath;		
@@ -916,6 +973,62 @@ public static double inToMi(double unit) {
 	double answer = unit * conversionMath;		
 	return answer;
 }
+
+/* CONVERSION METHODS || FEET || FEET || FEET || FEET || FEET || FEET */
+
+public static double ftToMm(double unit) { 
+	double conversionMath = conv.ft_to_mm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double ftToCm(double unit) { 
+	double conversionMath = conv.ft_to_cm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double ftToDm(double unit) { 
+	double conversionMath = conv.ft_to_dm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double ftToM(double unit) { 
+	double conversionMath = conv.ft_to_m;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double ftToDam(double unit) { 
+	double conversionMath = conv.ft_to_dam;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double ftToHm(double unit) { 
+	double conversionMath = conv.ft_to_hm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double ftToKm(double unit) { 
+	double conversionMath = conv.ft_to_km;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double ftToIn(double unit) { 
+	double conversionMath = conv.ft_to_in;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double ftToYd(double unit) { 
+	double conversionMath = conv.ft_to_yd;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double ftToMi(double unit) { 
+	double conversionMath = conv.ft_to_mi;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+
+/* CONVERSION METHODS || YARD || YARD || YARD || YARD|| YARD || YARD*/
+
 
 	/** Converts centimeters to feet
 	 *  

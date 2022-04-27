@@ -145,7 +145,7 @@ public class conv {
     final static double ft_to_m= 0.3048;
     final static double ft_to_dam = 0.03048;
     final static double ft_to_hm = 0.003048;
-    final static double ft_to_im = 12;
+    final static double ft_to_in = 12;
     final static double ft_to_km = 0.0003048;
     final static double ft_to_yd = 0.333333;
     final static double ft_to_mi = 0.000189394;
