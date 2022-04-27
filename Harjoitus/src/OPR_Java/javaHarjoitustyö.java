@@ -1,6 +1,6 @@
 /** Converts centimeters to other units of measure
- * @author Aaro Tukia, Tuomas Thur�n, Mika Lukkarinen
- * @version 1.2
+ * @author Aaro Tukia, Tuomas Thuren, Mika Lukkarinen
+ * @version 1.3
  * @since 1.0
  * @param args array of string arguments.
  */
@@ -20,8 +20,11 @@ public static void main(String[] args) {
 	//takes user input
 	int input = lukija.nextInt();
 	
+	//empty string to store corresponding string from input
 	String unit = "";
-	//switch1
+	
+	
+	//SWITCH #1  ||  Determine what is being converted 
 	switch(input) {
 	case 1:
 		unit = "millimeter";
@@ -111,13 +114,20 @@ public static void main(String[] args) {
 		//ASD
 		break;
 	}
-	
+	//lists available units
 	listUnits();
+	
+	//asks user what to convert first unit to
 	System.out.println(unit + "s to?:  ");
+	
 	//takes the second user input
 	int input2 = lukija.nextInt();
+	
+	//empty string used to store corresponding string from input
 	String unit2 = "";
-	//switch2
+	
+	
+	//SWITCH #2   || DETERMINE UNIT 2
 	switch(input2) {
 	case 1:
 		unit2 = "millimeter";
@@ -310,6 +320,7 @@ public static void main(String[] args) {
 			System.out.println(dmToMi(userInput));
 		}
 		//IF STATEMENTS || METERS || METERS || METERS || METERS 
+		
 		if (unit.equals("meter") && unit2.equals("millimeter")) {
 			System.out.println(mToMm(userInput));
 		}
@@ -343,13 +354,12 @@ public static void main(String[] args) {
 		else {
 			System.out.println("Can't convert to that....");
 		}
-//		System.out.println(cmToM(userInput));   t
+//		System.out.println(cmToM(userInput)); 
 	
 	}
-/** Lists available units of measurement
- */
+
+/** Void method used to list available units of measurement to the user  */
 public static void listUnits() {
-	//lists available units of measurement to the user
 	
 	System.out.println(" 1:Millimeters      8: inches          15:    \n" 
 					+ " 2:Centimeters      9: foot            16:   \n"
