@@ -230,13 +230,13 @@ public static void main(String[] args) {
 		
 		//Create file where results will be stored if need for saving for example
 		try {
-			File OBJ = new File("..\\Java-Harjoitustyo\\tulos.txt");
+			File OBJ = new File("tulos.txt");
 			if (OBJ.createNewFile()) {
 				System.out.println("File created called: " + OBJ.getName()+" - containing results also");
 			} else {
 				System.out.println("File "+OBJ.getName()+" allready exists! Will be updated for results!");
 			}
-			FileWriter writer = new FileWriter("..\\Java-Harjoitustyo\\tulos.txt", true);
+			FileWriter writer = new FileWriter("tulos.txt", true);
 			BufferedWriter out = new BufferedWriter(writer);
 
 		//IF STATEMENTS || MILLIMETERS || MILLIMETERS || MILLIMETERS || MILLIMETERS
