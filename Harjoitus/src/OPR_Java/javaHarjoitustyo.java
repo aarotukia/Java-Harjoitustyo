@@ -11,7 +11,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.Buffer;
 import java.io.FileWriter;
-public class javaHarjoitustyö {
+public class javaHarjoitustyo {
 
 public static final Scanner lukija = new Scanner(System.in);
 public static void main(String[] args) {
