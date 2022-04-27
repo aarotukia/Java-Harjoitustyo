@@ -10,6 +10,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.IOException;
 import java.nio.Buffer;
+import java.text.DecimalFormat;
 import java.io.FileWriter;
 public class javaHarjoitustyo {
 
@@ -150,6 +151,10 @@ public static void main(String[] args) {
 	case 11: 
 		unit2 = "mile";
 		System.out.println("You chose "+ unit2);
+		break;
+	case 12:
+		convertMoney();
+		break;
 	}
 	
 		//ASK USER FOR THE AMOUNT OF UNITS TO BE USED IN THE CONVERSION
@@ -524,7 +529,7 @@ public static void main(String[] args) {
 		}
 	
 		else {
-			System.out.println("Can't convert to that....");
+			System.out.println("Can't convert to that....\n");
 			out.write("ERROR!");
 		}
 
@@ -550,11 +555,11 @@ public static void main(String[] args) {
 public static void listUnits() {
 	
 String[] listOfUnits = {
-						"1. Millimeters       8.inches",
-						"2. Centimeters       9. foot",
+						"1. Millimeters       8.  inches",
+						"2. Centimeters       9.  foot",
 						"3. Decimeters        10. yard",
 						"4. Meters            11. mile",
-						"5. Decameters",
+						"5. Decameters        12. Convert money",
 						"6. Hectometers",
 						"7. Kilometers",		
 						};
@@ -573,6 +578,7 @@ String[] listOfUnits = {
  * @return Returns a double value representing the calculated conversion
  */
 /* CONVERSION METHODS || MILLIMETERS  || MILLIMETERS || MILLIMETERS || MILLIMETERS  */
+
 
 public static double mmToCm(double unit) { 
 	double conversionMath = conv.mm_to_cm;
@@ -1154,6 +1160,48 @@ public static double miToYd(double unit) {
 	double answer = unit * conversionMath;		
 	return answer;
 }
+
+//ASKS THE USER FOR TYPE AND AMOUNT OF CURRENCY AND CONVERTS IT TO OTHER TYPES
+
+public static void convertMoney (){
+ 	double amount;
+    double  Dollar, Euro, Pound;
+    int valinta;
+    DecimalFormat f = new DecimalFormat("##.##");
+    System.out.println("Choose the currency you want to convert:");
+    System.out.println("Enter number 1 for Dollar");
+    System.out.println("Enter number 2 for Pound");
+    System.out.println("Enter number 3 for Euro");
+
+    valinta = lukija.nextInt();
+
+    System.out.println("Enter the amount of money you want to be converted?");
+    amount = lukija.nextFloat();
+
+    if (valinta == 1) {   
+      
+          Pound = amount *0.78;
+          System.out.println(amount + " Dollar = " + f.format(Pound) + " Pound");
+          Euro = amount *0.87;
+          System.out.println(amount + " Dollar = " + f.format(Euro) + " Euro");
+    }
+          else if (valinta == 2) {
+
+          Dollar = amount *1.26;
+          System.out.println(amount + " Pound = " + f.format(Dollar) + " Dollar");
+          Euro = amount *1.10;
+          System.out.println(amount + " Pound = " + f.format(Euro) + " Euro");
+          }
+          else if (valinta == 3)  {
+          
+          Dollar = amount *1.14;
+          System.out.println(amount + " Euro = " + f.format(Dollar) + " Dollar");
+          Pound = amount *0.90;
+          System.out.println(amount + " Euro = " + f.format(Pound) + " Pound");
+          }
+         else {
+          System.out.println("Invalid Input");
+    }}
 
 
 	/** Converts centimeters to feet
