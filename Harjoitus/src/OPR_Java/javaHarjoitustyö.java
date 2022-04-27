@@ -1,6 +1,6 @@
 /** Converts centimeters to other units of measure
  * @author Aaro Tukia, Tuomas Thuren, Mika Lukkarinen
- * @version 1.3
+ * @version 1.4
  * @since 1.0
  * @param args array of string arguments.
  */
@@ -40,22 +40,22 @@ public static void main(String[] args) {
 	
 		break;
 	case 4: 
-		unit = "meters";
+		unit = "meter";
 		System.out.println("You chose "+ unit);
 
 		break;
 	case 5:
-		unit = "decameters";
+		unit = "decameter";
 		System.out.println("You chose "+ unit);
 
 		break;
 	case 6: 
-		unit = "hectometers";
+		unit = "hectometer";
 		System.out.println("You chose "+ unit);
 
 		break;
 	case 7:
-		unit = "kilometers";
+		unit = "kilometer";
 		System.out.println("You chose "+ unit);
 	
 		break;
@@ -381,6 +381,37 @@ public static void main(String[] args) {
 		if (unit.equals("decameter") && unit2.equals("mile")) {
 			System.out.println(damToMi(userInput));
 		}
+		
+		//IF STATEMENTS || HECTOMETERS || HECTOMETERS || HECTOMETERS || HECTOMETERS
+		
+		if (unit.equals("hectometer") && unit2.equals("millimeter")) {
+			System.out.println(hmToMm(userInput));
+		}
+		if (unit.equals("hectometer") && unit2.equals("centimeter")) {
+			System.out.println(hmToCm(userInput));
+		}
+		if (unit.equals("hectometer") && unit2.equals("decimeter")) {
+			System.out.println(hmToDm(userInput));
+		}
+		if (unit.equals("hectometer") && unit2.equals("meter")) {
+			System.out.println(hmToM(userInput));
+		}
+		if (unit.equals("hectometer") && unit2.equals("kilometer")) {
+			System.out.println(hmToKm(userInput));
+		}
+		if (unit.equals("hectometer") && unit2.equals("inches")) {
+			System.out.println(hmToIn(userInput));
+		}
+		if (unit.equals("hectometer") && unit2.equals("foot")) {
+			System.out.println(hmToFt(userInput));
+		}
+		if (unit.equals("hectometer") && unit2.equals("yard")) {
+			System.out.println(hmToYd(userInput));
+		}
+		if (unit.equals("hectometer") && unit2.equals("mile")) {
+			System.out.println(hmToMi(userInput));
+		}
+		
 		else {
 			System.out.println("Can't convert to that....");
 		}
@@ -662,6 +693,59 @@ public static double damToYd(double unit) {
 }
 public static double damToMi(double unit) { 
 	double conversionMath = conv.dam_to_mi;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+
+//CONVERSION METHODS || HECTOMETER CONVERSION || HECTOMETER CONVERSION || HECTOMETER CONVERSION
+
+public static double hmToMm(double unit) { 
+	double conversionMath = conv.hm_to_mm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double hmToCm(double unit) { 
+	double conversionMath = conv.hm_to_cm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double hmToDm(double unit) { 
+	double conversionMath = conv.hm_to_dm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double hmToM(double unit) { 
+	double conversionMath = conv.hm_to_m;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double hmToDam(double unit) { 
+	double conversionMath = conv.hm_to_dam;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double hmToKm(double unit) { 
+	double conversionMath = conv.hm_to_km;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double hmToIn(double unit) { 
+	double conversionMath = conv.hm_to_in;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double hmToFt(double unit) { 
+	double conversionMath = conv.hm_to_ft;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double hmToYd(double unit) { 
+	double conversionMath = conv.hm_to_yd;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double hmToMi(double unit) { 
+	double conversionMath = conv.hm_to_mi;
 	double answer = unit * conversionMath;		
 	return answer;
 }
