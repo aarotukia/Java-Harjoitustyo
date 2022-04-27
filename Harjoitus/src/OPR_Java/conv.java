@@ -163,7 +163,7 @@ public class conv {
     final static double yd_to_dam = 0.09144;
     final static double yd_to_hm = 0.009144;
     final static double yd_to_km = 0.0009144;
-    final static double yd_to_im = 36;
+    final static double yd_to_in = 36;
     final static double yd_to_ft = 3;
     final static double yd_to_mi = 0.000568182;
     final static double yd_square_meter = 0;
