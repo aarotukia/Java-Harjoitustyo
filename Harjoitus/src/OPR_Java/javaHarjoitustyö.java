@@ -225,8 +225,8 @@ public static void main(String[] args) {
 		System.out.println("how many " +unit+"s ?: ");
 		double userInput = lukija.nextDouble();
 		
-		//IF STATEMENTS || MILLIMETERS || MILLIMETERS || MILLIMETERS || MILLIMETERS
 		
+		//Create file where results will be stored if need for saving for example
 		try {
 			File OBJ = new File("..\\Java-Harjoitustyo\\tulos.txt");
 			if (OBJ.createNewFile()) {
@@ -235,6 +235,8 @@ public static void main(String[] args) {
 				System.out.println("File "+OBJ.getName()+" allready exists! Will be updated for results!");
 			}
 			FileWriter writer = new FileWriter("..\\Java-Harjoitustyo\\tulos.txt");
+
+		//IF STATEMENTS || MILLIMETERS || MILLIMETERS || MILLIMETERS || MILLIMETERS
 		if (unit.equals("millimeter") && unit2.equals("centimeter")) {
 			writer.write(unit2 + ": " + mmToCm(userInput));
 			
@@ -589,8 +591,10 @@ public static void main(String[] args) {
 		}
 	
 		else {
-			writer.write("Can't convert to that....");
+			System.out.println("Can't convert to that....");
 		}
+
+		//READING FILE FOR RESULTS
 		writer.close();
 		Scanner filereader = new Scanner(OBJ);
 		while (filereader.hasNextLine()) {
@@ -598,7 +602,7 @@ public static void main(String[] args) {
 			System.out.println(data);
 		}
 		filereader.close();
-		
+		//EXCEPTIONS
 		} catch (IOException e) {
 			System.out.print("Error occured while writing to file or creating file!");
 			e.printStackTrace();
