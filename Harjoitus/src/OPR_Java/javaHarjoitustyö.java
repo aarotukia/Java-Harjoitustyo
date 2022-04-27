@@ -236,7 +236,7 @@ public static void main(String[] args) {
 			} else {
 				System.out.println("File "+OBJ.getName()+" allready exists! Will be updated for results!");
 			}
-			FileWriter writer = new FileWriter("..\\Java-Harjoitustyo\\tulos.txt");
+			FileWriter writer = new FileWriter("..\\Java-Harjoitustyo\\tulos.txt", true);
 			BufferedWriter out = new BufferedWriter(writer);
 
 		//IF STATEMENTS || MILLIMETERS || MILLIMETERS || MILLIMETERS || MILLIMETERS
