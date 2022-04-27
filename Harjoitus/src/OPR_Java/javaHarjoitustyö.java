@@ -576,8 +576,6 @@ public static void main(String[] args) {
 	
 	}
 
-/* Void method that lists available units of measurement for the user */
-
 /** Void method used to list available units of measurement to the user  */
 public static void listUnits() {
 	
@@ -591,10 +589,14 @@ public static void listUnits() {
 					+ "");
 	
 }
+
+
+/**  CONVERSION METHODS START HERE ||  CONVERSION METHODS START HERE ||  CONVERSION METHODS START HERE ||  /*
+ * 
+ * @param unit The amount of a given unit given by the user
+ * @return Returns a double value representing the calculated conversion
+ */
 /* CONVERSION METHODS || MILLIMETERS  || MILLIMETERS || MILLIMETERS || MILLIMETERS  */
-
-
-//CONVERSION METHODS || MILLIMETER CONVERSION || MILLIMETER CONVERSION || MILLIMETER CONVERSION
 
 public static double mmToCm(double unit) { 
 	double conversionMath = conv.mm_to_cm;
@@ -649,10 +651,6 @@ public static double mmToMi(double unit) {
 
 /* CONVERSION METHODS || CENTIMETERS || CENTIMETERS || CENTIMETERS || CENTIMETERS  */
 
-
-
-//CONVERSION METHODS || CENTIMETER CONVERSION || CENTIMETER CONVERSION || CENTIMETER CONVERSION
-
 public static double cmToMm(double unit) { 
 	double conversionMath = conv.cm_to_mm;
 	double answer = unit * conversionMath;		
@@ -705,9 +703,6 @@ public static double cmToMi(double unit) {
 }
 
 /* CONVERSION METHODS || DECIMETERS || DECIMETERS || DECIMETERS || DECIMETERS  */
-
-
-//CONVERSION METHODS || DECIMETER CONVERSION || DECIMETER CONVERSION || DECIMETER CONVERSION
 
 public static double dmToMm(double unit) { 
 	double conversionMath = conv.dm_to_mm;
@@ -762,9 +757,6 @@ public static double dmToMi(double unit) {
 
 /* CONVERSION METHODS || METERS || METERS || METERS || METERS */
 
-
-//CONVERSION METHODS || METER CONVERSION || METER CONVERSION || METER CONVERSION
-
 public static double mToMm(double unit) { 
 	double conversionMath = conv.m_to_mm;
 	double answer = unit * conversionMath;		
@@ -817,10 +809,6 @@ public static double mToMi(double unit) {
 }
 
 /* CONVERSION METHODS || DECAMETERS || DECAMETERS || DECAMETERS || DECAMETERS */
-
-
-
-//CONVERSION METHODS || DECAMETER CONVERSION || DECAMETER CONVERSION || DECAMETER CONVERSION
 
 public static double damToMm(double unit) { 
 	double conversionMath = conv.dam_to_mm;
@@ -875,9 +863,6 @@ public static double damToMi(double unit) {
 
 /* CONVERSION METHODS || HECTOMETERS || HECTOMETERS  || HECTOMETERS || HECTOMETERS  */
 
-
-//CONVERSION METHODS || HECTOMETER CONVERSION || HECTOMETER CONVERSION || HECTOMETER CONVERSION
-
 public static double hmToMm(double unit) { 
 	double conversionMath = conv.hm_to_mm;
 	double answer = unit * conversionMath;		
@@ -930,9 +915,6 @@ public static double hmToMi(double unit) {
 }
 
 /* CONVERSION METHODS || KILOMETERS ||KILOMETERS || KILOMETERS || KILOMETERS  */
-
-
-//CONVERSION METHODS || KILOMETER CONVERSION || KILOMETER CONVERSION || KILOMETER CONVERSION
 
 public static double kmToMm(double unit) { 
 	double conversionMath = conv.km_to_mm;
@@ -987,8 +969,6 @@ public static double kmToMi(double unit) {
 
 /* CONVERSION METHODS || INCHES || INCHES|| INCHES|| INCHES */
 
-
-//CONVERSION METHODS || INCHES CONVERSION || INCHES CONVERSION || INCHES CONVERSION
 public static double inToMm(double unit) { 
 	double conversionMath = conv.in_to_mm;
 	double answer = unit * conversionMath;		
@@ -1093,7 +1073,7 @@ public static double ftToMi(double unit) {
 	return answer;
 }
 
-/* CONVERSION METHODS || YARD || YARD || YARD || YARD|| YARD || YARD*/
+/* CONVERSION METHODS || YARD || YARD || YARD || YARD|| YARD || YARD */
 
 public static double ydToMm(double unit) { 
 	double conversionMath = conv.yd_to_mm;
@@ -1146,7 +1126,7 @@ public static double ydToMi(double unit) {
 	return answer;
 }
 
-/* CONVERSION METHODS || MILE || MILE || MILE || MILE || MILE || MILE*/
+/* CONVERSION METHODS || MILE || MILE || MILE || MILE || MILE || MILE */
 
 public static double miToMm(double unit) { 
 	double conversionMath = conv.mi_to_mm;
