@@ -343,7 +343,7 @@ public static void main(String[] args) {
 		else {
 			System.out.println("Can't convert to that....");
 		}
-//		System.out.println(cmToM(userInput));
+//		System.out.println(cmToM(userInput));   t
 	
 	}
 /** Lists available units of measurement
