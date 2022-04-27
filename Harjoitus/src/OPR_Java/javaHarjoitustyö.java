@@ -279,6 +279,36 @@ public static void main(String[] args) {
 		}
 		//IF STATEMENTS || DECIMETERS || DECIMETERS || DECIMETERS || DECIMETERS
 		
+		if (unit.equals("decimeter") && unit2.equals("millimeter")) {
+			System.out.println(dmToMm(userInput));
+		}
+		if (unit.equals("decimeter") && unit2.equals("centimeter")) {
+			System.out.println(dmToCm(userInput));
+		}
+		if (unit.equals("decimeter") && unit2.equals("meter")) {
+			System.out.println(dmToM(userInput));
+		}
+		if (unit.equals("decimeter") && unit2.equals("decameter")) {
+			System.out.println(dmToDam(userInput));
+		}
+		if (unit.equals("decimeter") && unit2.equals("hectometer")) {
+			System.out.println(dmToHm(userInput));
+		}
+		if (unit.equals("decimeter") && unit2.equals("kilometer")) {
+			System.out.println(dmToKm(userInput));
+		}
+		if (unit.equals("decimeter") && unit2.equals("inches")) {
+			System.out.println(dmToIn(userInput));
+		}
+		if (unit.equals("decimeter") && unit2.equals("foot")) {
+			System.out.println(dmToFt(userInput));
+		}
+		if (unit.equals("decimeter") && unit2.equals("yard")) {
+			System.out.println(dmToYd(userInput));
+		}
+		if (unit.equals("decimeter") && unit2.equals("mile")) {
+			System.out.println(dmToMi(userInput));
+		}
 		
 		
 		else {
@@ -304,6 +334,7 @@ public static void listUnits() {
 }
 
 //CONVERSION METHODS || MILLIMETER CONVERSION || MILLIMETER CONVERSION || MILLIMETER CONVERSION
+
 public static double mmToCm(double unit) { 
 	double conversionMath = conv.mm_to_cm;
 	double answer = unit * conversionMath;		
@@ -408,6 +439,58 @@ public static double cmToMi(double unit) {
 	return answer;
 }
 
+//CONVERSION METHODS || DECIMETER CONVERSION || DECIMETER CONVERSION || DECIMETER CONVERSION
+
+public static double dmToMm(double unit) { 
+	double conversionMath = conv.dm_to_mm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double dmToCm(double unit) { 
+	double conversionMath = conv.dm_to_cm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double dmToM(double unit) { 
+	double conversionMath = conv.dm_to_m;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double dmToDam(double unit) { 
+	double conversionMath = conv.dm_to_dam;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double dmToHm(double unit) { 
+	double conversionMath = conv.dm_to_hm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double dmToKm(double unit) { 
+	double conversionMath = conv.dm_to_km;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double dmToIn(double unit) { 
+	double conversionMath = conv.dm_to_in;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double dmToFt(double unit) { 
+	double conversionMath = conv.dm_to_ft;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double dmToYd(double unit) { 
+	double conversionMath = conv.dm_to_yd;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double dmToMi(double unit) { 
+	double conversionMath = conv.dm_to_mi;
+	double answer = unit * conversionMath;		
+	return answer;
+}
 
 
 
