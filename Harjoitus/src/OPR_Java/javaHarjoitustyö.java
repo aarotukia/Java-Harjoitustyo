@@ -396,6 +396,9 @@ public static void main(String[] args) {
 		if (unit.equals("hectometer") && unit2.equals("meter")) {
 			System.out.println(hmToM(userInput));
 		}
+		if (unit.equals("hectometer") && unit2.equals("decameter")) {
+			System.out.println(damToM(userInput));
+		}
 		if (unit.equals("hectometer") && unit2.equals("kilometer")) {
 			System.out.println(hmToKm(userInput));
 		}
@@ -410,6 +413,37 @@ public static void main(String[] args) {
 		}
 		if (unit.equals("hectometer") && unit2.equals("mile")) {
 			System.out.println(hmToMi(userInput));
+		}
+		//IF STATEMENTS || KILOMETERS || KILOMETERS || KILOMETERS || KILOMETERS
+		if (unit.equals("kilometer") && unit2.equals("millimeter")) {
+			System.out.println(kmToMm(userInput));
+		}
+		if (unit.equals("kilometer") && unit2.equals("centimeter")) {
+			System.out.println(kmToCm(userInput));
+		}
+		if (unit.equals("kilometer") && unit2.equals("decimeter")) {
+			System.out.println(kmToDm(userInput));
+		}
+		if (unit.equals("kilometer") && unit2.equals("meter")) {
+			System.out.println(kmToM(userInput));
+		}
+		if (unit.equals("kilometer") && unit2.equals("decameter")) {
+			System.out.println(damToKm(userInput));
+		}
+		if (unit.equals("kilometer") && unit2.equals("hectometer")) {
+			System.out.println(hmToKm(userInput));
+		}
+		if (unit.equals("kilometer") && unit2.equals("inches")) {
+			System.out.println(kmToIn(userInput));
+		}
+		if (unit.equals("kilometer") && unit2.equals("foot")) {
+			System.out.println(kmToFt(userInput));
+		}
+		if (unit.equals("kilometer") && unit2.equals("yard")) {
+			System.out.println(kmToYd(userInput));
+		}
+		if (unit.equals("kilometer") && unit2.equals("mile")) {
+			System.out.println(kmToMi(userInput));
 		}
 		
 		else {
@@ -746,6 +780,59 @@ public static double hmToYd(double unit) {
 }
 public static double hmToMi(double unit) { 
 	double conversionMath = conv.hm_to_mi;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+
+//CONVERSION METHODS || KILOMETER CONVERSION || KILOMETER CONVERSION || KILOMETER CONVERSION
+
+public static double kmToMm(double unit) { 
+	double conversionMath = conv.km_to_mm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double kmToCm(double unit) { 
+	double conversionMath = conv.km_to_cm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double kmToDm(double unit) { 
+	double conversionMath = conv.km_to_dm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double kmToM(double unit) { 
+	double conversionMath = conv.km_to_m;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double kmToDam(double unit) { 
+	double conversionMath = conv.km_to_dam;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double kmToHm(double unit) { 
+	double conversionMath = conv.km_to_hm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double kmToIn(double unit) { 
+	double conversionMath = conv.km_to_in;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double kmToFt(double unit) { 
+	double conversionMath = conv.km_to_ft;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double kmToYd(double unit) { 
+	double conversionMath = conv.km_to_yd;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double kmToMi(double unit) { 
+	double conversionMath = conv.km_to_mi;
 	double answer = unit * conversionMath;		
 	return answer;
 }
