@@ -539,6 +539,37 @@ public static void main(String[] args) {
 		
 		//IF STATEMENTS || MILE || MILE || MILE || MILE || MILE || MILE || MILE 
 		
+		else if (unit.equals("mile") && unit2.equals("millimeter")) {
+			System.out.println(miToMm(userInput));
+		}
+		else if (unit.equals("mile") && unit2.equals("centimeter")) {
+			System.out.println(miToCm(userInput));
+		}
+		else if (unit.equals("mile") && unit2.equals("decimeter")) {
+			System.out.println(miToDm(userInput));
+		}
+		else if (unit.equals("mile") && unit2.equals("meter")) {
+			System.out.println(miToM(userInput));
+		}
+		else if (unit.equals("mile") && unit2.equals("decameter")) {
+			System.out.println(miToDam(userInput));
+		}
+		else if (unit.equals("mile") && unit2.equals("hectometer")) {
+			System.out.println(miToHm(userInput));
+		}
+		else if (unit.equals("mile") && unit2.equals("kilometer")) {
+			System.out.println(miToKm(userInput));
+		}
+		else if (unit.equals("mile") && unit2.equals("inches")) {
+			System.out.println(miToIn(userInput));
+		}
+		else if (unit.equals("mile") && unit2.equals("foot")) {
+			System.out.println(miToFt(userInput));
+		}
+		else if (unit.equals("mile") && unit2.equals("yard")) {
+			System.out.println(miToYd(userInput));
+		}
+	
 		else {
 			System.out.println("Can't convert to that....");
 		}
@@ -1115,6 +1146,58 @@ public static double ydToMi(double unit) {
 	return answer;
 }
 
+/* CONVERSION METHODS || MILE || MILE || MILE || MILE || MILE || MILE*/
+
+public static double miToMm(double unit) { 
+	double conversionMath = conv.mi_to_mm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double miToCm(double unit) { 
+	double conversionMath = conv.mi_to_cm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double miToDm(double unit) { 
+	double conversionMath = conv.mi_to_dm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double miToM(double unit) { 
+	double conversionMath = conv.mi_to_m;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double miToDam(double unit) { 
+	double conversionMath = conv.mi_to_dam;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double miToHm(double unit) { 
+	double conversionMath = conv.mi_to_hm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double miToKm(double unit) { 
+	double conversionMath = conv.mi_to_km;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double miToIn(double unit) { 
+	double conversionMath = conv.mi_to_in;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double miToFt(double unit) { 
+	double conversionMath = conv.mi_to_ft;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double miToYd(double unit) { 
+	double conversionMath = conv.mi_to_yd;
+	double answer = unit * conversionMath;		
+	return answer;
+}
 
 
 	/** Converts centimeters to feet

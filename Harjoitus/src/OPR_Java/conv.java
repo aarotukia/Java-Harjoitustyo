@@ -180,7 +180,7 @@ public class conv {
     final static double mi_to_dam = 160.934;
     final static double mi_to_hm = 16.0934;
     final static double mi_to_km = 1.60934;
-    final static double mi_to_im = 63360;
+    final static double mi_to_in = 63360;
     final static double mi_to_yd = 1760;
     final static double mi_to_ft = 5280;
     final static double mi_square_meter = 0;
