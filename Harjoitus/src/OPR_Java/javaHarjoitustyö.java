@@ -6,6 +6,8 @@
  */
 package OPR_Java;
 import java.util.Scanner;
+import java.io.File;
+import java.io.IOException;
 public class javaHarjoitustyö {
 
 public static final Scanner lukija = new Scanner(System.in);
@@ -223,7 +225,18 @@ public static void main(String[] args) {
 		double userInput = lukija.nextDouble();
 		
 		//IF STATEMENTS || MILLIMETERS || MILLIMETERS || MILLIMETERS || MILLIMETERS
-		
+		try {
+			File OBJ = new File("tulos.txt");
+			if (OBJ.createNewFile()) {
+				System.out.println("File created called: " + OBJ.getName()+" - containing results also");
+			} else {
+				System.out.println("File "+OBJ.getName()+" allready exists! Will be updated for results!");
+			}
+		} catch (IOException e) {
+			System.out.println("An error has occured.");
+			e.printStackTrace();
+		}
+
 		if (unit.equals("millimeter") && unit2.equals("centimeter")) {
 			System.out.println(unit2 + ": " + mmToCm(userInput));
 		}
