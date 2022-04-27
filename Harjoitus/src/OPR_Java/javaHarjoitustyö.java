@@ -309,8 +309,37 @@ public static void main(String[] args) {
 		if (unit.equals("decimeter") && unit2.equals("mile")) {
 			System.out.println(dmToMi(userInput));
 		}
-		
-		
+		//IF STATEMENTS || METERS || METERS || METERS || METERS 
+		if (unit.equals("meter") && unit2.equals("millimeter")) {
+			System.out.println(mToMm(userInput));
+		}
+		if (unit.equals("meter") && unit2.equals("centimeter")) {
+			System.out.println(mToCm(userInput));
+		}
+		if (unit.equals("meter") && unit2.equals("decimeter")) {
+			System.out.println(mToDm(userInput));
+		}
+		if (unit.equals("meter") && unit2.equals("decameter")) {
+			System.out.println(mToDam(userInput));
+		}
+		if (unit.equals("meter") && unit2.equals("hectometer")) {
+			System.out.println(mToHm(userInput));
+		}
+		if (unit.equals("meter") && unit2.equals("kilometer")) {
+			System.out.println(mToKm(userInput));
+		}
+		if (unit.equals("meter") && unit2.equals("inches")) {
+			System.out.println(mToIn(userInput));
+		}
+		if (unit.equals("meter") && unit2.equals("foot")) {
+			System.out.println(mToFt(userInput));
+		}
+		if (unit.equals("meter") && unit2.equals("yard")) {
+			System.out.println(mToYd(userInput));
+		}
+		if (unit.equals("meter") && unit2.equals("mile")) {
+			System.out.println(mToMi(userInput));
+		}
 		else {
 			System.out.println("Can't convert to that....");
 		}
@@ -492,8 +521,58 @@ public static double dmToMi(double unit) {
 	return answer;
 }
 
+//CONVERSION METHODS || METER CONVERSION || METER CONVERSION || METER CONVERSION
 
-
+public static double mToMm(double unit) { 
+	double conversionMath = conv.m_to_mm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double mToCm(double unit) { 
+	double conversionMath = conv.m_to_cm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double mToDm(double unit) { 
+	double conversionMath = conv.m_to_dm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double mToDam(double unit) { 
+	double conversionMath = conv.m_to_dam;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double mToHm(double unit) { 
+	double conversionMath = conv.m_to_hm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double mToKm(double unit) { 
+	double conversionMath = conv.m_to_km;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double mToIn(double unit) { 
+	double conversionMath = conv.m_to_in;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double mToFt(double unit) { 
+	double conversionMath = conv.m_to_ft;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double mToYd(double unit) { 
+	double conversionMath = conv.m_to_yd;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double mToMi(double unit) { 
+	double conversionMath = conv.m_to_mi;
+	double answer = unit * conversionMath;		
+	return answer;
+}
 
 	/** Converts centimeters to feet
 	 *  
