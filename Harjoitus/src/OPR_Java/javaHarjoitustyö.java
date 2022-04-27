@@ -397,7 +397,7 @@ public static void main(String[] args) {
 			System.out.println(hmToM(userInput));
 		}
 		if (unit.equals("hectometer") && unit2.equals("decameter")) {
-			System.out.println(damToM(userInput));
+			System.out.println(hmToDam(userInput));
 		}
 		if (unit.equals("hectometer") && unit2.equals("kilometer")) {
 			System.out.println(hmToKm(userInput));
@@ -428,10 +428,10 @@ public static void main(String[] args) {
 			System.out.println(kmToM(userInput));
 		}
 		if (unit.equals("kilometer") && unit2.equals("decameter")) {
-			System.out.println(damToKm(userInput));
+			System.out.println(kmToDam(userInput));
 		}
 		if (unit.equals("kilometer") && unit2.equals("hectometer")) {
-			System.out.println(hmToKm(userInput));
+			System.out.println(kmToHm(userInput));
 		}
 		if (unit.equals("kilometer") && unit2.equals("inches")) {
 			System.out.println(kmToIn(userInput));
@@ -444,6 +444,34 @@ public static void main(String[] args) {
 		}
 		if (unit.equals("kilometer") && unit2.equals("mile")) {
 			System.out.println(kmToMi(userInput));
+		}
+		//IF STATEMENTS || INCHES || INCHES || INCHES || INCHES
+		if (unit.equals("inches") && unit2.equals("millimeter")) {
+			System.out.println(inToMm(userInput));
+		}
+		if (unit.equals("inches") && unit2.equals("centimeter")) {
+			System.out.println(inToCm(userInput));
+		}
+		if (unit.equals("inches") && unit2.equals("decimeter")) {
+			System.out.println(inToDm(userInput));
+		}
+		if (unit.equals("inches") && unit2.equals("meter")) {
+			System.out.println(inToM(userInput));
+		}
+		if (unit.equals("inches") && unit2.equals("decameter")) {
+			System.out.println(inToDam(userInput));
+		}
+		if (unit.equals("inches") && unit2.equals("hectometer")) {
+			System.out.println(inToHm(userInput));
+		}
+		if (unit.equals("inches") && unit2.equals("foot")) {
+			System.out.println(inToFt(userInput));
+		}
+		if (unit.equals("inches") && unit2.equals("yard")) {
+			System.out.println(inToYd(userInput));
+		}
+		if (unit.equals("inches") && unit2.equals("mile")) {
+			System.out.println(inToMi(userInput));
 		}
 		
 		else {
@@ -833,6 +861,58 @@ public static double kmToYd(double unit) {
 }
 public static double kmToMi(double unit) { 
 	double conversionMath = conv.km_to_mi;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+
+//CONVERSION METHODS || KILOMETER CONVERSION || KILOMETER CONVERSION || KILOMETER CONVERSION
+public static double inToMm(double unit) { 
+	double conversionMath = conv.in_to_mm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double inToCm(double unit) { 
+	double conversionMath = conv.in_to_cm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double inToDm(double unit) { 
+	double conversionMath = conv.in_to_dm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double inToM(double unit) { 
+	double conversionMath = conv.in_to_m;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double inToDam(double unit) { 
+	double conversionMath = conv.in_to_dam;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double inToHm(double unit) { 
+	double conversionMath = conv.in_to_hm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double inToKm(double unit) { 
+	double conversionMath = conv.in_to_km;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double inToFt(double unit) { 
+	double conversionMath = conv.in_to_ft;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double inToYd(double unit) { 
+	double conversionMath = conv.in_to_yd;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double inToMi(double unit) { 
+	double conversionMath = conv.in_to_mi;
 	double answer = unit * conversionMath;		
 	return answer;
 }
