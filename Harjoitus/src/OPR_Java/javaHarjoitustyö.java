@@ -92,7 +92,7 @@ public static void main(String[] args) {
 	case 15: 
 		unit = "acre";
 		System.out.println("You chose "+ unit);
-	
+		
 		break;
 	case 16: 
 		unit = "square mile";
@@ -141,17 +141,17 @@ public static void main(String[] args) {
 
 		break;
 	case 5:
-		unit2 = "decameters";
+		unit2 = "decameter";
 		System.out.println("You chose "+ unit2);
 
 		break;
 	case 6: 
-		unit2 = "hectometers";
+		unit2 = "hectometer";
 		System.out.println("You chose "+ unit2);
 
 		break;
 	case 7:
-		unit2 = "kilometers";
+		unit2 = "kilometer";
 		System.out.println("You chose "+ unit2);
 	
 		break;
@@ -215,8 +215,7 @@ public static void main(String[] args) {
 		//ASD
 		break;
 	}
-		System.out.println("converting " +unit + " to " + unit2 +"s..");
-	
+		System.out.println("converting " + unit + " to " + unit2 +"s..");	
 	}
 /** Lists available units of measurement
  */
