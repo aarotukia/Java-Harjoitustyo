@@ -219,7 +219,6 @@ public static void main(String[] args) {
 	
 		//ASK USER FOR THE AMOUNT OF UNITS TO BE USED IN THE CONVERSION
 		System.out.println("converting " +unit +"s"+ " to " + unit2 +"s..");
-	
 		System.out.println("how many " +unit+"s ?: ");
 		double userInput = lukija.nextDouble();
 		
@@ -351,10 +350,40 @@ public static void main(String[] args) {
 		if (unit.equals("meter") && unit2.equals("mile")) {
 			System.out.println(mToMi(userInput));
 		}
+		//IF STATEMENTS || DECAMETERS || DECAMETERS || DECAMETERS || DECAMETERS 
+		if (unit.equals("decameter") && unit2.equals("millimeter")) {
+			System.out.println(damToMm(userInput));
+		}
+		if (unit.equals("decameter") && unit2.equals("centimeter")) {
+			System.out.println(damToCm(userInput));
+		}
+		if (unit.equals("decameter") && unit2.equals("decimeter")) {
+			System.out.println(damToDm(userInput));
+		}
+		if (unit.equals("decameter") && unit2.equals("meter")) {
+			System.out.println(damToM(userInput));
+		}
+		if (unit.equals("decameter") && unit2.equals("hectometer")) {
+			System.out.println(damToHm(userInput));
+		}
+		if (unit.equals("decameter") && unit2.equals("kilometer")) {
+			System.out.println(damToKm(userInput));
+		}
+		if (unit.equals("decameter") && unit2.equals("inches")) {
+			System.out.println(damToIn(userInput));
+		}
+		if (unit.equals("decameter") && unit2.equals("foot")) {
+			System.out.println(damToFt(userInput));
+		}
+		if (unit.equals("decameter") && unit2.equals("yard")) {
+			System.out.println(damToYd(userInput));
+		}
+		if (unit.equals("decameter") && unit2.equals("mile")) {
+			System.out.println(damToMi(userInput));
+		}
 		else {
 			System.out.println("Can't convert to that....");
 		}
-//		System.out.println(cmToM(userInput)); 
 	
 	}
 
@@ -580,6 +609,59 @@ public static double mToYd(double unit) {
 }
 public static double mToMi(double unit) { 
 	double conversionMath = conv.m_to_mi;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+
+//CONVERSION METHODS || DECAMETER CONVERSION || DECAMETER CONVERSION || DECAMETER CONVERSION
+
+public static double damToMm(double unit) { 
+	double conversionMath = conv.dam_to_mm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double damToCm(double unit) { 
+	double conversionMath = conv.dam_to_cm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double damToDm(double unit) { 
+	double conversionMath = conv.dam_to_dm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double damToM(double unit) { 
+	double conversionMath = conv.dam_to_m;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double damToHm(double unit) { 
+	double conversionMath = conv.dam_to_hm;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double damToKm(double unit) { 
+	double conversionMath = conv.dam_to_km;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double damToIn(double unit) { 
+	double conversionMath = conv.dam_to_in;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double damToFt(double unit) { 
+	double conversionMath = conv.dam_to_ft;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double damToYd(double unit) { 
+	double conversionMath = conv.dam_to_yd;
+	double answer = unit * conversionMath;		
+	return answer;
+}
+public static double damToMi(double unit) { 
+	double conversionMath = conv.dam_to_mi;
 	double answer = unit * conversionMath;		
 	return answer;
 }
