@@ -1,6 +1,6 @@
 /** Converts centimeters to other units of measure
  * @author Aaro Tukia, Tuomas Thuren, Mika Lukkarinen
- * @version 1.4
+ * @version 1.5
  * @since 1.0
  * @param args array of string arguments.
  */
@@ -16,6 +16,7 @@ public class javaHarjoitustyo {
 public static final Scanner lukija = new Scanner(System.in);
 public static void main(String[] args) {
 	
+
 	conv conv = new conv();
 	System.out.println("Converting units to other units of measurement \nGive unit type:");
 	
@@ -82,42 +83,6 @@ public static void main(String[] args) {
 	case 11: 
 		unit = "mile";
 		System.out.println("You chose "+ unit);
-	
-		break;
-	case 12:
-
-
-		break;
-	case 13: 
-	
-	
-		break;
-	case 14:
-	
-		
-		break;
-	case 15: 
-
-	
-		break;
-	case 16: 
-
-		break;
-	case 17:
-		//ASD
-		break;
-	case 18: 
-		//asd
-		break;
-	case 19:
-		//ASD
-		break;
-	case 20: 
-		//asd
-		break;
-	case 21:
-		//ASD
-		break;
 	}
 	//lists available units
 	listUnits();
@@ -185,41 +150,6 @@ public static void main(String[] args) {
 	case 11: 
 		unit2 = "mile";
 		System.out.println("You chose "+ unit2);
-	
-		break;
-	case 12:
-
-		break;
-	case 13: 
-
-	
-		break;
-	case 14:
-
-		
-		break;
-	case 15: 
-
-	
-		break;
-	case 16: 
-
-		break;
-	case 17:
-		//ASD
-		break;
-	case 18: 
-		//asd
-		break;
-	case 19:
-		//ASD
-		break;
-	case 20: 
-		//asd
-		break;
-	case 21:
-		//ASD
-		break;
 	}
 	
 		//ASK USER FOR THE AMOUNT OF UNITS TO BE USED IN THE CONVERSION
@@ -234,7 +164,7 @@ public static void main(String[] args) {
 			if (OBJ.createNewFile()) {
 				System.out.println("File created called: " + OBJ.getName()+" - containing results also");
 			} else {
-				System.out.println("File "+OBJ.getName()+" allready exists! Will be updated for results!");
+				System.out.println("File "+OBJ.getName()+" already exists! Will be updated for results!");
 			}
 			FileWriter writer = new FileWriter("tulos.txt", true);
 			BufferedWriter out = new BufferedWriter(writer);
@@ -619,16 +549,22 @@ public static void main(String[] args) {
 /** Void method used to list available units of measurement to the user  */
 public static void listUnits() {
 	
-	System.out.println(" 1:Millimeters      8: inches          15:    \n" 
-					+ " 2:Centimeters      9: foot            16:   \n"
-					+ " 3:Decimeter       10: yard            17:    \n "
-					+ "4:Meter           11: mile            18: \n"
-					+ " 5:Decameter       12:                 19: \n "
-					+ "6:Hectometer      13:                 20: \n"
-					+ " 7:Kilometer       14:                 21: \n"
-					+ "");
+String[] listOfUnits = {
+						"1. Millimeters       8.inches",
+						"2. Centimeters       9. foot",
+						"3. Decimeters        10. yard",
+						"4. Meters            11. mile",
+						"5. Decameters",
+						"6. Hectometers",
+						"7. Kilometers",		
+						};
+
+		for (int count= 0; count < listOfUnits.length;count++ ) {
+			System.out.println(listOfUnits[count]);
+			}
+			}
 	
-}
+
 
 
 /**  CONVERSION METHODS START HERE ||  CONVERSION METHODS START HERE ||  CONVERSION METHODS START HERE ||  /*
