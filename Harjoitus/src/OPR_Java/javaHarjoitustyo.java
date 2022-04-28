@@ -117,6 +117,8 @@ public class javaHarjoitustyo {
 			BufferedWriter out = new BufferedWriter(writer);
 			if (unit == "money") {
 				System.out.println(unit+" has been converted so no output in txt file!");
+				System.out.println("\ntulos.txt file history:");
+				System.out.println("...");
 				out.write("Monetary value cannot be added to text file, check terminal for results.");
 				out.write("\nLine added on: " + new java.util.Date() + "\n");
 				out.close();
@@ -127,6 +129,7 @@ public class javaHarjoitustyo {
 					System.out.println(data);
 				}
 				filereader.close();
+				System.out.println("...");
 			} else {
 				// * call the method listUnits to list available units to the user*/
 				listUnits();
@@ -204,7 +207,8 @@ public class javaHarjoitustyo {
 				System.out.println("converting " + unit + "s" + " to " + unit2 + "s..");
 				System.out.println("how many " + unit + "s ?: ");
 				double userInput = lukija.nextDouble();
-
+				System.out.println("\ntulos.txt file history:");
+				System.out.println("...");
 				/* IF STATEMENTS || MILLIMETERS || MILLIMETERS || MILLIMETERS || MILLIMETERS */
 				if (unit.equals("millimeter") && unit2.equals("centimeter")) {
 					out.write(unit2 + ": " + mmToCm(userInput));
@@ -480,6 +484,7 @@ public class javaHarjoitustyo {
 					System.out.println(data);
 				}
 				filereader.close();
+				System.out.println("...");
 			}
 			// EXCEPTIONS
 		} catch (IOException e) {
