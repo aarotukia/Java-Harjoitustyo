@@ -115,6 +115,16 @@ public class javaHarjoitustyo {
 			BufferedWriter out = new BufferedWriter(writer);
 			if (unit == "money") {
 				System.out.println(unit+" has been converted so no output in txt file!");
+				out.write("Monetary value cannot be added to text file, check terminal for results.");
+				out.write("\nLine added on: " + new java.util.Date() + "\n");
+				out.close();
+				writer.close();
+				Scanner filereader = new Scanner(OBJ);
+				while (filereader.hasNextLine()) {
+					String data = filereader.nextLine();
+					System.out.println(data);
+				}
+				filereader.close();
 			} else {
 				// * call the method listUnits to list available units to the user*/
 				listUnits();
