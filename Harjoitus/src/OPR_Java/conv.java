@@ -1,3 +1,8 @@
+/** A class containing all the conversion multiplier values
+ * @author Aaro Tukia, Tuomas Thuren, Mika Lukkarinen
+ * @version 1.6
+ * @since 1.0
+ */
 package OPR_Java;
 
 public class conv {

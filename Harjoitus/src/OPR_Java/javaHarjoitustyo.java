@@ -1,8 +1,7 @@
-/** Converts centimeters to other units of measure
+/** A program that converts units of measure to other units of measure
  * @author Aaro Tukia, Tuomas Thuren, Mika Lukkarinen
- * @version 1.5
+ * @version 1.6
  * @since 1.0
- * @param args array of string arguments.
  */
 package OPR_Java;
 import java.util.Scanner;
@@ -13,25 +12,31 @@ import java.nio.Buffer;
 import java.text.DecimalFormat;
 import java.io.FileWriter;
 public class javaHarjoitustyo {
-
 public static final Scanner lukija = new Scanner(System.in);
+
+/** 
+ * Main part of the program containing all the questions, user inputs, if-statements and switches to determine which calculation method should be called.
+ * @param args
+ */
 public static void main(String[] args) {
 	
 
 	conv conv = new conv();
+	
+	/** Ask user to give a unit type */ 
 	System.out.println("Converting units to other units of measurement \nGive unit type:");
 	
-	//lists available units of measurement
+	/* lists available units of measurement */
 	listUnits();
 	
-	//takes user input
+	/* takes user input */
 	int input = lukija.nextInt();
 	
-	//empty string to store corresponding string from input
+	/*empty string to store corresponding string from input */
 	String unit = "";
 	
 	
-	//SWITCH #1  ||  Determine what is being converted 
+	/** SWITCH #1  ||  Determine what is being converted ie. first unit */
 	switch(input) {
 	case 1:
 		unit = "millimeter";
@@ -85,20 +90,21 @@ public static void main(String[] args) {
 		unit = "mile";
 		System.out.println("You chose "+ unit);
 	}
-	//lists available units
+	
+	//* call the method listUnits to list available units to the user*/ 
 	listUnits();
 	
-	//asks user what to convert first unit to
+	/* asks user what to convert first unit to */
 	System.out.println(unit + "s to?:  ");
 	
-	//takes the second user input
+	/* takes the second user input  */
 	int input2 = lukija.nextInt();
 	
-	//empty string used to store corresponding string from input
+	/* empty string used to store corresponding string from input */
 	String unit2 = "";
 	
 	
-	//SWITCH #2   || DETERMINE UNIT 2
+	/* SWITCH #2   || DETERMINE WHAT TO CONVERT THE FIRST UNIT TO IE. IDENTIFY UNIT 2 */
 	switch(input2) {
 	case 1:
 		unit2 = "millimeter";
@@ -153,17 +159,18 @@ public static void main(String[] args) {
 		System.out.println("You chose "+ unit2);
 		break;
 	case 12:
+		/* in case of the user choosing case 12, call upon the convertMoney method */
 		convertMoney();
 		break;
 	}
 	
-		//ASK USER FOR THE AMOUNT OF UNITS TO BE USED IN THE CONVERSION
+		/* ASK USER FOR THE AMOUNT OF UNITS TO BE USED IN THE CONVERSION */
 		System.out.println("converting " +unit +"s"+ " to " + unit2 +"s..");
 		System.out.println("how many " +unit+"s ?: ");
 		double userInput = lukija.nextDouble();
 		
 		
-		//Create file where results will be stored if need for saving for example
+		/* Create file where results will be stored if need for saving for example */
 		try {
 			File OBJ = new File("tulos.txt");
 			if (OBJ.createNewFile()) {
@@ -174,7 +181,7 @@ public static void main(String[] args) {
 			FileWriter writer = new FileWriter("tulos.txt", true);
 			BufferedWriter out = new BufferedWriter(writer);
 
-		//IF STATEMENTS || MILLIMETERS || MILLIMETERS || MILLIMETERS || MILLIMETERS
+		/* IF STATEMENTS || MILLIMETERS || MILLIMETERS || MILLIMETERS || MILLIMETERS */
 		if (unit.equals("millimeter") && unit2.equals("centimeter")) {
 			out.write(unit2 + ": " + mmToCm(userInput));
 			
@@ -551,7 +558,7 @@ public static void main(String[] args) {
 	
 	}
 
-/** Void method used to list available units of measurement to the user  */
+/** Void method that lists all available units of measurement to the user from a table using a for loop to print its contents  */
 public static void listUnits() {
 	
 String[] listOfUnits = {
@@ -572,11 +579,16 @@ String[] listOfUnits = {
 
 
 
-/**  CONVERSION METHODS START HERE ||  CONVERSION METHODS START HERE ||  CONVERSION METHODS START HERE ||  /*
+/**  CONVERSION METHODS START HERE ||  CONVERSION METHODS START HERE ||  CONVERSION METHODS START HERE ||  
  * 
- * @param unit The amount of a given unit given by the user
- * @return Returns a double value representing the calculated conversion
+ * 	 This portion includes 111 methods that calculate the unit conversions using the multiplier values from the class conv.java and a smaller currency conversion method at the end.
+ * 
+ * @param unit The amount of a given unit given by the user.
+ * @return Returns a double value representing the calculated conversion.
  */
+
+
+
 /* CONVERSION METHODS || MILLIMETERS  || MILLIMETERS || MILLIMETERS || MILLIMETERS  */
 
 
@@ -1161,7 +1173,7 @@ public static double miToYd(double unit) {
 	return answer;
 }
 
-//ASKS THE USER FOR TYPE AND AMOUNT OF CURRENCY AND CONVERTS IT TO OTHER TYPES
+/* ASKS THE USER FOR TYPE AND AMOUNT OF CURRENCY AND CONVERTS IT TO OTHER TYPES */
 
 public static void convertMoney (){
  	double amount;
@@ -1201,22 +1213,5 @@ public static void convertMoney (){
           }
          else {
           System.out.println("Invalid Input");
-    }}
-
-
-	/** Converts centimeters to feet
-	 *  
-	 * @param cm The amount of centimeters.
-	 * @return	A double value representing the length in feet.
-	 */
-//	public static double cmToFt(double unit) { 
-//		double conversionMath = conv.cm_to_ft;
-//		double feet = unit * conversionMath;	
-//		return feet; 
-//	}
-	
-	
-
-	
-	
-}
+         	}}
+	}
