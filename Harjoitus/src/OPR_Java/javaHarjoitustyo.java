@@ -195,7 +195,8 @@ public class javaHarjoitustyo {
 						break;
 					case 12:
 						/* in case of the user choosing case 12, call upon the convertMoney method */
-						System.out.println("Impossible as second choice!");
+						unit2 = "money";
+						System.out.println("Impossible as second choice! An error will occur.");
 						break;
 				}
 
@@ -458,11 +459,13 @@ public class javaHarjoitustyo {
 					out.write(unit2 + ": " + miToFt(userInput));
 				} else if (unit.equals("mile") && unit2.equals("yard")) {
 					out.write(unit2 + ": " + miToYd(userInput));
+				} else if (unit2.equals("money")) {
+					out.write(unit2 + " can't be converted to --> " + unit);
 				}
 
 				else {
 					System.out.println("Can't convert to that....\n");
-					out.write("could not find value or error.");
+					out.write("could not convert value or an error has occured.");
 				}
 
 				// READING FILE FOR RESULTS
