@@ -104,6 +104,8 @@ public class javaHarjoitustyo {
 		/*
 		 * SWITCH #2 || DETERMINE WHAT TO CONVERT THE FIRST UNIT TO IE. IDENTIFY UNIT 2
 		 */
+		/* Create file where results will be stored if need for saving for example */
+
 		try {
 			File OBJ = new File("tulos.txt");
 			if (OBJ.createNewFile()) {
@@ -137,8 +139,6 @@ public class javaHarjoitustyo {
 
 				/* empty string used to store corresponding string from input */
 				String unit2 = "";
-
-				/* Create file where results will be stored if need for saving for example */
 
 				switch (input2) {
 					case 1:
@@ -459,6 +459,8 @@ public class javaHarjoitustyo {
 					out.write(unit2 + ": " + miToFt(userInput));
 				} else if (unit.equals("mile") && unit2.equals("yard")) {
 					out.write(unit2 + ": " + miToYd(userInput));
+
+				// IF STATEMENT IF UNIT 2 = MONEY
 				} else if (unit2.equals("money")) {
 					out.write(unit2 + " can't be converted to --> " + unit);
 				}
