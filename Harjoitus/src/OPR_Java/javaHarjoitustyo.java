@@ -581,7 +581,7 @@ String[] listOfUnits = {
 
 /**  CONVERSION METHODS START HERE ||  CONVERSION METHODS START HERE ||  CONVERSION METHODS START HERE ||  
  * 
- * 	 This portion includes 111 methods that calculate the unit conversions using the multiplier values from the class conv.java and a smaller currency conversion method at the end.
+ * 	 This portion includes 100+ methods that calculate the unit conversions using the multiplier values from the class conv.java and a smaller currency conversion method at the end.
  * 
  * @param unit The amount of a given unit given by the user.
  * @return Returns a double value representing the calculated conversion.
